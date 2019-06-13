@@ -28,6 +28,7 @@ func parseStats(ts unix.Taskstats) (*Stats, error) {
 		ElapsedTime:         microseconds(ts.Ac_etime),
 		UserCPUTime:         microseconds(ts.Ac_utime),
 		SystemCPUTime:       microseconds(ts.Ac_stime),
+		RealCPUTime:         nanoseconds(ts.Cpu_run_real_total),
 		MinorPageFaults:     ts.Ac_minflt,
 		MajorPageFaults:     ts.Ac_majflt,
 		CPUDelayCount:       ts.Cpu_count,

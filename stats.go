@@ -17,6 +17,7 @@ type Stats struct {
 	ElapsedTime         time.Duration
 	UserCPUTime         time.Duration
 	SystemCPUTime       time.Duration
+	RealCPUTime         time.Duration
 	MinorPageFaults     uint64
 	MajorPageFaults     uint64
 	CPUDelayCount       uint64
