@@ -1,4 +1,4 @@
-module github.com/mdlayher/taskstats
+module github.com/def/taskstats
 
 go 1.12
 
